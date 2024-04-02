@@ -102,27 +102,22 @@ body {
     font-family: system-ui, sans-serif;
 }
 
-.container {
-    display: flex;
-    height: 100vh;
+h2 {
+    font-weight: 600;
 }
 
+/* Global container */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Left section */
 .left-section {
-    flex: 35%;
+    flex: 30%;
     position: relative;
     background: no-repeat center url(./images/greens.jpg);
     background-size: cover;
-}
-
-.right-section {
-    flex: 65%;
-    background-color: #fbfbf1;
-    padding: 5% 0 0 0;
-}
-
-.left-bg {
-    height: 100%;
-    object-fit: cover;
 }
 
 .odin-band {
@@ -154,8 +149,11 @@ body {
     font-size: 0.8rem;
 }
 
-h2 {
-    font-weight: 600;
+/* Right section */
+.right-section {
+    flex: 70%;
+    background-color: #fbfbf1;
+    padding: 5% 0 0 0;
 }
 
 .core-form {
