@@ -24,6 +24,7 @@ blockquote,
 dl,
 dd {
     margin-block-end: 0;
+    margin-top: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -112,6 +113,8 @@ body {
 
 .right-section {
     flex: 65%;
+    background-color: #fbfbf1;
+    padding: 40px;
 }
 
 .left-bg {
@@ -146,4 +149,9 @@ body {
     width: 100%;
     margin-bottom: 10px;
     font-size: 0.8rem;
+}
+
+.intro {
+    font-size: 1.3rem;
+    font-weight: 600;
 }
