@@ -36,6 +36,7 @@ ol[role='list'] {
 body {
     min-height: 100vh;
     line-height: 1.5;
+    margin: 0;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -89,7 +90,60 @@ textarea:not([rows]) {
     scroll-margin-block: 5ex;
 }
 
+/* END OF CSS RESET */
+
 @font-face {
     font-family: 'Norse-Bold';
-    src: url(./fonts/Norse-Bold.otf) format('otf');
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+body {
+    font-family: system-ui, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.left-section {
+    flex: 30%;
+    position: relative;
+}
+
+.right-section {
+    flex: 70%;
+}
+
+.left-bg {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.odin-band {
+    color: white;
+    font-family: Norse-Bold;
+    font-size: 60px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+.odin-logo {
+    height: 80px;
+}
+
+.img-credits {
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
 }
