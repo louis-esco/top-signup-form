@@ -106,6 +106,44 @@ h2 {
     font-weight: 600;
 }
 
+label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(64, 63, 63);
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    padding: 5px;
+    line-height: 1.3;
+}
+
+input:focus {
+    border: 1px solid rgb(55, 55, 173);
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    outline: none;
+}
+
+input:user-invalid {
+    border: 1px solid red;
+}
+
+input:valid {
+    border: 1px solid green;
+}
+
+input+span {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: red;
+    line-height: 1.3;
+}
+
+input:user-invalid+span::before {
+    content: '*Please fill appropriately';
+}
+
 /* Global container */
 .container {
     display: flex;
@@ -182,4 +220,21 @@ h2 {
 .submit-btn,
 .login {
     margin: 30px 0 20px 40px;
+}
+
+.submit-btn button {
+    background-color: #596D48;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    cursor: pointer;
+}
+
+.login a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 700;
 }

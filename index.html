@@ -29,32 +29,38 @@
                     <div class="inputs">
                         <div class="input-pair">
                             <label for="first-name">FIRST NAME</label>
-                            <input type="text" name="first-name" id="first-name">
+                            <input type="text" name="first-name" id="first-name" pattern="[a-zA-Z]+" required>
+                            <span>&#xfeff;</span>
                         </div>
 
-                        <div class="input-pair">
+                        <div class=" input-pair">
                             <label for="last-name">LAST NAME</label>
-                            <input type="text" name="last-name" id="last-name">
+                            <input type="text" name="last-name" id="last-name" pattern="[a-zA-Z]+" required>
+                            <span></span>
                         </div>
 
                         <div class="input-pair">
                             <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
+                            <span></span>
                         </div>
 
                         <div class="input-pair">
                             <label for="tel">PHONE NUMBER</label>
-                            <input type="tel" name="tel" id="tel">
+                            <input type="tel" name="tel" id="tel" pattern="[0-9]{10}" required>
+                            <span></span>
                         </div>
 
                         <div class="input-pair">
                             <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" required>
+                            <span class="password"></span>
                         </div>
 
                         <div class="input-pair">
                             <label for="password-check">CONFIRM PASSWORD</label>
-                            <input type="password" name="password" id="password-check">
+                            <input type="password" name="password" id="password-check" required>
+                            <span class="password"></span>
                         </div>
                     </div>
 
@@ -67,6 +73,7 @@
         </div>
     </div>
 
+    <script src="./app.js"></script>
 </body>
 
 </html>
